@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="assets/jquery-3.2.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+<div class="forma">
+    <form action="News_handler.php" method="post">
+        <p>Название новости</p>
+        <input name='name_ofnew'>
+        <p>Описание</p>
+        <input name='name_description'>
+        <p>Ссылка на изображение</p>
+        <input name='link_img'>
+        <input name='type' value='add' hidden>
+        <br><br>
+<!--         <input type="submit">
+        <input type="reset"> -->
+        <button class="btn btn-large" type="submit">Отправить</button>
+        <button class="btn btn-info" type="reset">Сбросить</button>
+    </form>
+    <br>
+    <form action="News_handler.php" method="post">
+        <p>Удалить новость</p>
+        <input name='name_ofnew'>
+        <input name='type' value="delete" hidden>
+        <br><br>
+<!--         <input type="submit">
+        <input type="reset"> -->
+        <button class="btn btn-large" type="submit">Отправить</button>
+        <button class="btn btn-info" type="reset">Сбросить</button>
+    </form>
+    <br>
+    <!--  -->
+    <form action="News_handler.php" method="post">
+        <p>Редактировать новость</p>
+        <input name='name_ofnew'>
+        <p>Новое Описание</p>
+        <input name='name_description'>
+        <p>Новая Ссылка на изображение</p>
+        <input name='link_img'>
+        <input name='type' value="edit" hidden>
+        <br><br>
+<!--         <input type="submit">
+        <input type="reset"> -->
+        <button class="btn btn-large" type="submit">Отправить</button>
+        <button class="btn btn-info" type="reset">Сбросить</button>
+    </form>
+    <br><br>
+    <form action="News_handler.php" method="post">
+<!--         <p>Вывести все новости</p> -->
+        <input name='type' value="show" hidden>
+        <br><br>
+        <p>
+            <button class="btn btn-large btn-primary" type="submit">Вывести все новости</button>
+            <button class="btn">Standart button</button>
+<!--             <button class="btn btn-large" type="button">Вывести всех пользователей</button> -->
+        </p>
+<!--         <input type="submit">
+        <input type="reset"> -->
+        
+    </form>
+</div>
+<img src="img/zara1.jpg" class="img-rounded">
+<img src="img/zara2.jpg" class="img-circle">
+<img src="img/zara3.jpg" class="img-polaroid">
+</body>
+</html>
